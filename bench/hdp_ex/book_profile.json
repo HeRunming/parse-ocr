@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "book_id": "hdp_ex",
+  "title": "hdp_ex",
+  "languages": [
+    "en"
+  ],
+  "include_unnumbered_named": true,
+  "kinds": [
+    "definition",
+    "theorem",
+    "lemma",
+    "proposition",
+    "corollary",
+    "conjecture",
+    "claim",
+    "fact",
+    "example",
+    "exercise",
+    "algorithm",
+    "notation",
+    "remark"
+  ],
+  "kind_aliases": {
+    "problem": "exercise"
+  },
+  "label_regex": "(?:[0-9]+|[A-Z])(?:\\.[0-9]+)+",
+  "structural_label_regex": "",
+  "emit_structural_wrappers": false,
+  "numbering_scope": "book",
+  "question_section_headings": [
+    "Exercises",
+    "Problems"
+  ],
+  "support_section_headings": [
+    "Hints",
+    "Answers",
+    "Solutions"
+  ],
+  "distant_support_alignment": true,
+  "preserve_markers": [],
+  "worked_example_policy": "split_when_source_has_setup_and_resolution",
+  "figure_policy": "only_explicit_dependencies",
+  "segmentation_prompt_overlay": "HDP is a dense mathematical probability text. Preserve the printed hierarchy exactly (for example Theorem 2.9.1 and Exercise 4.31). Keep complete statements together with all lettered parts, displayed formulas, matrices, and immediately attached hypotheses. Treat proof/derivation as support for the preceding object, not a new object. Keep exercises, definitions, theorems, lemmas, propositions, corollaries, examples, algorithms, notation, remarks, claims, facts, and explicit hints/solutions. The book has a dedicated Hints for the exercises section near the end; join hints by printed exercise label only after checking the statement against the PDF. Do not normalize or silently repair mathematical symbols; preserve uncertain OCR as a review item.",
+  "visual_prompt_overlay": "",
+  "direct_conflict_similarity": 0.94,
+  "strip_terminal_proof_marks": false,
+  "exclude_pdf_page_ranges": [],
+  "glossary_page_ranges": [],
+  "source_verified_conflict_overrides": [],
+  "merge_object_groups": [],
+  "drop_object_ids": [],
+  "drop_relationship_edge_ids": [],
+  "inspection_notes": [],
+  "expected_counts": {}
+}

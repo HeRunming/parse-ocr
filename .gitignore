@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.DS_Store
+.env
+
+# Source books, run outputs and third-party reference data are never committed.
+*.pdf
+*.zip
+*.docx
+output/
+bench/*/output/
+bench/*/ablation/
+bench/*/baseline_dataset_snapshot/
+bench/*.log
+bench/eval/
+bench/gold/
+bench/pdfs/
+refdata/

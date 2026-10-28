@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "route": "direct",
+  "pdf": "../pdfs/perelman.pdf",
+  "output": "output",
+  "profile": "book_profile.json",
+  "vlm": {
+    "base_url": "${VLM_BASE_URL}",
+    "model": "gpt-6-sol",
+    "api_key_env": "VLM_API_KEY",
+    "timeout_seconds": 1200,
+    "request_attempts": 6,
+    "segment_workers": 32,
+    "vision_workers": 64,
+    "double_pass": true
+  },
+  "direct": {
+    "inventory_window_pages": 10,
+    "inventory_overlap_pages": 2,
+    "inventory_zoom": 1.25,
+    "inventory_workers": 8,
+    "extraction_window_pages": 5,
+    "extraction_overlap_pages": 1,
+    "extraction_zoom": 2.4,
+    "extraction_workers": 8,
+    "source_grounding_enabled": true,
+    "source_verification_enabled": true,
+    "source_verification_zoom": 4.0,
+    "source_verification_workers": 8,
+    "source_verification_max_tokens": 8000,
+    "coverage_audit_enabled": true,
+    "coverage_audit_window_pages": 4,
+    "coverage_audit_overlap_pages": 1,
+    "coverage_audit_zoom": 2.0,
+    "coverage_audit_workers": 8,
+    "coverage_audit_page_ranges": [],
+    "retry_page_padding": 1,
+    "retry_max_pages": 8,
+    "retry_zoom": 2.8,
+    "retry_workers": 8,
+    "glossary_zoom": 3.0,
+    "glossary_workers": 8,
+    "manual_retry_ids": []
+  },
+  "mineru": {
+    "backend": "auto",
+    "api_base": "https://mineru.net/api/v4",
+    "api_key_env": "MINERU_API_KEY",
+    "model_version": "vlm",
+    "max_pages_per_part": 200,
+    "local_command": [],
+    "cache_dir": "output"
+  },
+  "pipeline": {
+    "segment_chunk_chars": 80000,
+    "segment_overlap_pages": 2,
+    "crop_padding": 35,
+    "crop_zoom": 3.0
+  },
+  "relationships": {
+    "enabled": true,
+    "implicit_dependencies": true,
+    "workers": 8,
+    "request_attempts": 4,
+    "error_retry_rounds": 2,
+    "error_retry_min_workers": 4,
+    "source_batch_size": 10,
+    "same_section_lookback": 30,
+    "same_section_lookahead": 30,
+    "cross_section_candidate_limit": 12,
+    "fail_on_request_errors": true
+  }
+}

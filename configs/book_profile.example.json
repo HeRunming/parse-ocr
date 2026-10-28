@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "book_id": "example-book",
+  "title": "book",
+  "languages": [
+    "en"
+  ],
+  "include_unnumbered_named": true,
+  "kinds": [
+    "definition",
+    "theorem",
+    "lemma",
+    "proposition",
+    "corollary",
+    "conjecture",
+    "claim",
+    "fact",
+    "example",
+    "exercise",
+    "algorithm",
+    "notation",
+    "remark"
+  ],
+  "kind_aliases": {
+    "problem": "exercise"
+  },
+  "label_regex": "(?:[0-9]+|[A-Z])(?:\\.[0-9]+)+",
+  "structural_label_regex": "",
+  "emit_structural_wrappers": false,
+  "numbering_scope": "book",
+  "question_section_headings": [
+    "Exercises",
+    "Problems"
+  ],
+  "support_section_headings": [
+    "Hints",
+    "Answers",
+    "Solutions"
+  ],
+  "distant_support_alignment": true,
+  "preserve_markers": [],
+  "worked_example_policy": "split_when_source_has_setup_and_resolution",
+  "figure_policy": "only_explicit_dependencies",
+  "segmentation_prompt_overlay": "",
+  "visual_prompt_overlay": "",
+  "direct_conflict_similarity": 0.94,
+  "strip_terminal_proof_marks": false,
+  "exclude_pdf_page_ranges": [],
+  "glossary_page_ranges": [],
+  "source_verified_conflict_overrides": [],
+  "merge_object_groups": [],
+  "drop_object_ids": [],
+  "drop_relationship_edge_ids": [],
+  "inspection_notes": [],
+  "expected_counts": {}
+}

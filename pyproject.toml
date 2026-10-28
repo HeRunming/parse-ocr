@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parse-ocr"
+dynamic = ["version"]
+description = "Source-faithful extraction of definitions, theorems, exercises and QA/VQA records from math PDFs and OCR'd scans"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["PyMuPDF>=1.23", "requests>=2.31"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+parse-ocr = "parse_ocr.cli:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "parse_ocr.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
